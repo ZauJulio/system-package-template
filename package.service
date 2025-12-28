@@ -1,0 +1,11 @@
+[Unit]
+Description=Description of your service
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/package-name
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
